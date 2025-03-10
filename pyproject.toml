@@ -1,0 +1,21 @@
+[project]
+name = "pana"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    
+]
+requires-python = ">=3.11"
+dependencies = [
+    "crewai>=0.102.0",
+    "crewai-tools>=0.0.1",
+]
+
+[project.scripts]
+pana = "pana:main"
+panaflow = "pana.main:kickoff"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
